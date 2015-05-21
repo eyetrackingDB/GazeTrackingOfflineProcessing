@@ -47,14 +47,14 @@ If you are planning to integrate NormMaker into a commercial product, please con
 * Clone the git repository
 * Build the project using CMake (build script included in the build folder)
 * Load recorded gaze tracking data folders either from the gaze tracking database or from the device where you recorded them
-* Start the post-processing by specifying the following attributes
-			<< "\t--input <filepath> \t The filepath to the folder where the video files and settings are located\n"
-			<< "\t--output <foldername> \t The folder name for the output (will be created inside the input folder) \n"
-			<< "\t--eyealg <algorithm>\t The algorithm that is used for detecting the eye center. Possible Values: grad, isoph, comb \n"
-			<< "\t--gazealg <algorithm>\t The algorithm that is used for detecting the gaze. Possible Values: approx, geo \n"
-			<< "\t--fastwidth \t The window size of the scaled window that is used for detecting the eye center. (optional) Default: 50 for grad, 80 for isoph algo\n"
-			<< "\t--convertfps \t Indicates that we want to convert FPS (optional) Default: off\n"
-			<< "\t--drawonvideo \t Indicates that we want to draw the gaze points on the recorded video (optional) Default: off\n"
-			<< "\t--drawonscreen \t Indicates that we want to draw the gaze points on the recorded screen (optional but requires --convertfps) Default: off\n"
+* Start the post-processing by specifying, according to your needs,  the following attributes:
+ * --input <filepath>: The filepath to the folder where the video files and settings are located
+ * --output <foldername>: The folder name for the output (will be created inside the input folder) 
+ * --eyealg <algorithm>: The algorithm that is used for detecting the eye center. Possible Values: grad, isoph, comb 
+ * --gazealg <algorithm>: The algorithm that is used for detecting the gaze. Possible Values: approx, geo 
+ * --fastwidth: The window size of the scaled window that is used for detecting the eye center. (optional) Default: 50 for grad, 80 for isoph algo
+ * --convertfps: Indicates that we want to convert FPS (optional) Default: off
+ * --drawonvideo: Indicates that we want to draw the gaze points on the recorded video (optional) Default: off
+ * --drawonscreen: Indicates that we want to draw the gaze points on the recorded screen (optional but requires --convertfps) Default: off
 
 For more information, we relate to the master thesis [(download)](https://docs.google.com/uc?export=download&id=0B729EHEvlyiUNXdBNVFXUzB2MWM) during which this frame work was developed.  
